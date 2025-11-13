@@ -12,6 +12,36 @@
   <div class="container">
     <h1>🧊 Fillr</h1>
     <p>Your Icebreaker &amp; Conversation Starter</p>
+    <!-- Theme picker button -->
+    <div id="theme-picker">
+      <button type="button" id="themeBtn">
+        <i class="fa-solid fa-palette"></i> Change Theme
+      </button>
+    </div>
+    <!-- Context dropdown -->
+    <div class="context-dropdown">
+      <label class="context-label" for="contextSelect">Choose your setting:</label>
+      <select id="contextSelect" class="context-select">
+        <option value="general">General / Any Setting</option>
+        <option value="team">Team Meeting</option>
+        <option value="classroom">Classroom</option>
+        <option value="gamenight">Game Night</option>
+        <option value="party">Party / Social Event</option>
+        <option value="networking">Networking Event</option>
+      </select>
+    </div>
+    <!-- Persona dropdown -->
+    <div class="context-dropdown">
+      <label class="context-label" for="personaSelect">Choose AI personality:</label>
+      <select id="personaSelect" class="context-select">
+        <option value="friendly">Friendly Coworker</option>
+        <option value="casual">Casual Intern (with emojis!)</option>
+        <option value="sassy">Sassy Intern</option>
+        <option value="professor">Professor Bot</option>
+        <option value="enthusiastic">Enthusiastic Friend</option>
+        <option value="zen">Zen Master</option>
+      </select>
+    </div>
     <!-- Icebreaker buttons -->
     <div id="icebreaker-buttons">
       <button type="button" id="iceBtn">

@@ -99,6 +99,109 @@ p {
   transform: translateY(-2px) scale(1.04);
 }
 
+/* Theme picker styles */
+#theme-picker {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#theme-picker button {
+  font-size: 16px;
+  padding: 10px 24px;
+  background: linear-gradient(to right, #f3e8ff 0%, #e0e7ff 100%);
+  color: #5e548e;
+  border: solid 2px #e0e7ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(180, 197, 228, 0.10);
+  outline: none;
+}
+
+#theme-picker button:hover {
+  background: linear-gradient(to right, #e0e7ff 0%, #f3e8ff 100%);
+  transform: translateY(-2px);
+}
+
+#theme-picker button i {
+  margin-right: 6px;
+}
+
+/* Theme color variations */
+body.theme-ocean {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+body.theme-ocean .container {
+  border: 2px solid #a8edea;
+}
+
+body.theme-ocean h1,
+body.theme-ocean .context-label {
+  color: #006d77;
+}
+
+body.theme-ocean #response {
+  background-color: #d4f1f4;
+  border: 1.5px solid #a8edea;
+}
+
+body.theme-sunset {
+  background: linear-gradient(135deg, #ffeaa7 0%, #ff6b6b 100%);
+}
+
+body.theme-sunset .container {
+  border: 2px solid #ffcc99;
+}
+
+body.theme-sunset h1,
+body.theme-sunset .context-label {
+  color: #d63031;
+}
+
+body.theme-sunset #response {
+  background-color: #fff3e0;
+  border: 1.5px solid #ffcc99;
+}
+
+body.theme-forest {
+  background: linear-gradient(135deg, #c7eec5 0%, #7fb77e 100%);
+}
+
+body.theme-forest .container {
+  border: 2px solid #a8d5ba;
+}
+
+body.theme-forest h1,
+body.theme-forest .context-label {
+  color: #2d6a4f;
+}
+
+body.theme-forest #response {
+  background-color: #e8f5e9;
+  border: 1.5px solid #a8d5ba;
+}
+
+body.theme-purple {
+  background: linear-gradient(135deg, #e5b8f4 0%, #c39bd3 100%);
+}
+
+body.theme-purple .container {
+  border: 2px solid #d4a5d6;
+}
+
+body.theme-purple h1,
+body.theme-purple .context-label {
+  color: #6c3483;
+}
+
+body.theme-purple #response {
+  background-color: #f4ecf7;
+  border: 1.5px solid #d4a5d6;
+}
+
 .context-dropdown {
   width: 100%;
   margin-top: 25px;
